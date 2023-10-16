@@ -1,7 +1,7 @@
 package configuration;
 
-import managers.FileReaderManager;
 import enums.DriverType;
+import managers.FileReaderManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -28,7 +28,6 @@ public class WebDriverManager {
         if (FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize())
             driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);
-
         return driver;
     }
 
