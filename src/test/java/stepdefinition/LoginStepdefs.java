@@ -1,24 +1,30 @@
 package stepdefinition;
 
 import configuration.WebDriverManager;
+import hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import managers.FileReaderManager;
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.WebDriver;
+import pageobjects.LoginPage;
 
 public class LoginStepdefs {
-    WebDriverManager webDriverManager = new WebDriverManager();
+    WebDriverManager webDriverManager;
+
 
     @Given("User is on the login page")
     public void userIsOnLoginPage() {
         System.out.println("User accessed the url");
-        webDriverManager.getDriver().get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+        webDriverManager = new WebDriverManager();
+       // webDriverManager.getDriver().get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
         String expectedResult = FileReaderManager.getInstance().getConfigReader().getApplicationUrl();
         String actualResult = webDriverManager.getDriver().getCurrentUrl();
         System.out.println("expectedResult:" + expectedResult);
         System.out.println("actualResult:" + actualResult);
         Assertions.assertEquals(expectedResult, actualResult);
+        
     }
 
 
