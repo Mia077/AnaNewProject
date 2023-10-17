@@ -1,4 +1,4 @@
-package configuration;
+package managers;
 
 import enums.DriverType;
 import managers.FileReaderManager;
