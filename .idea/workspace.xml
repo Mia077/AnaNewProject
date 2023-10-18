@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe8126df-fa04-423a-983b-a0010e776363" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/ConfigFileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/WebDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/managers/FileReaderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fe8126df-fa04-423a-983b-a0010e776363" name="Changes" comment="Fix-v2 About ChromeDriver">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/managers/PageObjectManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/DashboardSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demoApplitools/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoApplitools/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demoApplitools/hooks/Hooks.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/Configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/enums/DriverType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enums/DriverType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/managers/WebDriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/LoginSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,16 +71,21 @@
   <component name="ProjectId" id="2WebAtvyghZOC4292Ujv55VsyNQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MMacari\IdeaProjects\AnaNewProject\src\test\java\configuration" />
@@ -139,6 +141,21 @@
       <option name="presentableId" value="Default" />
       <updated>1697095856209</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fix-v1 About ChromeDriver">
+      <created>1697447968780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697447968780</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix-v2 About ChromeDriver">
+      <created>1697534433528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697534433528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +168,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix-v1 About ChromeDriver" />
+    <MESSAGE value="Fix-v2 About ChromeDriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix-v2 About ChromeDriver" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

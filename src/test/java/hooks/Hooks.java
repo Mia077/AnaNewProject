@@ -1,23 +1,25 @@
 package hooks;
 
-import configuration.WebDriverManager;
+import cucumber.TestContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.openqa.selenium.WebDriver;
 
 public class Hooks {
-    WebDriverManager webDriverManager = new WebDriverManager();
+    TestContext testContext;
+
+    public Hooks(TestContext context) {
+        testContext = context;
+    }
+
     @Before
     public void browserSetUp() {
         System.out.println("Browser open.");
-        webDriverManager.getDriver();
-
-
+        testContext.getWebDriverManager().getDriver();
     }
 
     @After
     public void tearDown() {
-        System.out.println("Browser is closed. ");
-       // webDriverManager.closeDriver();
+        System.out.println("Browser is closed.");
+       // testContext.getWebDriverManager().closeDriver();
     }
 }
